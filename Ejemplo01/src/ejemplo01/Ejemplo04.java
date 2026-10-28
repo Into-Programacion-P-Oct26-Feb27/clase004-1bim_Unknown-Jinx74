@@ -20,3 +20,4 @@ public class Ejemplo04 {
         System.out.print(nombreEstudiante);
     }
 }
+// System.out.print() me sirve para presentar informacion de forma seguida, sin procesos automáticos
