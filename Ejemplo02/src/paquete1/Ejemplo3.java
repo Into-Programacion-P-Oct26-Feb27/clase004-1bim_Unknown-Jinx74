@@ -25,6 +25,9 @@ public class Ejemplo3 {
         double notaAsignatura1;
         double notaAsignatura2;
         String nombreEstudiante;
+        int anioNacimiento;
+        String ciudadNacimiento;
+        int edadActual;
         
         System.out.println("Ingrese nombre de asignatura 1");
         nombreAsignatura1 = entrada.nextLine();
@@ -38,15 +41,26 @@ public class Ejemplo3 {
         entrada.nextLine();
         System.out.println("Ingrese nombre de estudiante");
         nombreEstudiante = entrada.nextLine();
-        
+        // se Necesita ingresar el año y ciudad de nacimiento
+        System.out.println("ingrese la ciudad de nacimiento");
+        ciudadNacimiento = entrada.nextLine();
+        System.out.println("Ingrese el año de nacimiento");
+        anioNacimiento = entrada.nextInt();
+        entrada.nextLine();
+        System.out.println("Edad actual");
+        edadActual = 2026-anioNacimiento;
         
         System.out.printf("Asignatura 1: %s\nNota 1:%.2f\nAsignatura 2:%s\n "
-                + "Nota 2: %.2f\nNombre de estudiante: %s\n",
+                + "Nota 2: %.2f\nNombre de estudiante: %s\nCiudad de "
+                + "nacimiento: %s\nAño de nacimiento:%s\nEdad actual:%s\n",
                 nombreAsignatura1,
                 notaAsignatura1,
                 nombreAsignatura2,
                 notaAsignatura2,
-                nombreEstudiante);
+                nombreEstudiante,
+                ciudadNacimiento,
+                anioNacimiento,
+                edadActual);
    
     }
     
